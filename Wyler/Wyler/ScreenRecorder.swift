@@ -69,6 +69,8 @@ final public class ScreenRecorder {
       try FileManager.default.removeItem(at: newVideoOutputURL)
     } catch {}
 
+    NSLog("flutter_screen_video/Wyler/ScreenRecorder.createvideoWriter: testing 4 *******************")
+
     do {
       try videoWriter = AVAssetWriter(outputURL: newVideoOutputURL, fileType: AVFileType.mp4)
     } catch let writerError as NSError {
